@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'KyoboHand';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: 'KyoboHand', sans-serif;
+  background-color: #fff7ee;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #3a6351; /* 딥 그린 */
+}
+
+.sidebar h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #3a6351; /* 딥 그린 */
+}
+
+.sidebar .email {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.icons a {
+  margin: 0 8px;
+  font-size: 20px;
+  color: #3a6351; /* 딥 그린 */
+  transition: color 0.3s;
+}
+
+.icons a:hover {
+  color: #2a4b3a; /* 더 진한 그린 */
+}
+
+#toggle-darkmode {
+  margin-top: 20px;
+  padding: 7px 14px;
+  background-color: #3a6351; /* 딥 그린 */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+#toggle-darkmode:hover {
+  background-color: #2a4b3a;
+}
+
+.main-content {
+  margin-right: 240px;
+  padding: 40px 60px;
+}
+
+.main-name {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #3a6351; /* 딥 그린 */
+}
+
+.intro p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.category-filter {
+  margin: 30px 0;
+}
+
+.category-filter button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: #eee;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.category-filter button.active,
+.category-filter button:hover {
+  background-color: #3a6351; /* 딥 그린 */
+  color: white;
+}
+
+.posts {
+  margin-top: 20px;
+}
+
+.post {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  color: #333;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.post:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  color: #3a6351; /* 딥 그린 */
+}
+
+.post h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #3a6351; /* 딥 그린 */
+}
+
+.post p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* 프로필 상세 섹션 */
+.profile-details {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  margin-top: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-details:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.profile-details h2 {
+  color: #3a6351; /* 딥 그린 */
+  margin-bottom: 16px;
+  font-weight: 700;
+  border-bottom: 2px solid #3a6351;
+  padding-bottom: 6px;
+}
+
+.tech-list, .career-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #444;
+  font-size: 1rem;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 다크모드 */
+body.dark {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark .sidebar {
+  background-color: #2c2c2c;
+  border-left: 1px solid #444;
+}
+
+body.dark .sidebar h2,
+body.dark .main-name,
+body.dark .profile-img {
+  color: #c4d6c0;
+  border-color: #c4d6c0;
+}
+
+body.dark .icons a {
+  color: #c4d6c0;
+}
+
+body.dark #toggle-darkmode {
+  background-color: #c4d6c0;
+  color: #2c2c2c;
+}
+
+body.dark #toggle-darkmode:hover {
+  background-color: #a8bda3;
+}
+
+body.dark .category-filter button.active,
+body.dark .category-filter button:hover {
+  background-color: #c4d6c0;
+  color: #2c2c2c;
+}
+
+body.dark .post {
+  background-color: #2e2e2e;
+  border-color: #444;
+}
+
+body.dark .post h2 {
+  color: #d5e3d5;
+}
+
+body.dark .post p {
+  color: #ccc;
+}
+
+body.dark .profile-details {
+  background-color: #2c2c2c;
+  box-shadow: 0 12px 30px rgba(196, 214, 192, 0.3);
+  color: #c4d6c0;
+}
+
+body.dark .profile-details:hover {
+  box-shadow: 0 20px 40px rgba(196, 214, 192, 0.5);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>이승수의 블로그</title>
+  <link rel="stylesheet" href="이승수.css" />
+  <script defer src="이승수.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <img src="이승수아이콘.jpg" alt="프로필" class="profile-img" />
+    <h2>이승수</h2>
+    <p class="email">leessgallagher@naver.com</p>
+    <div class="icons">
+      <a href="https://github.com/Leess1207" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:leessgallagher@naver.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.acmicpc.net/user/Leess1207" target="_blank"><i class="fas fa-code"></i></a>
+    </div>
+    <button id="toggle-darkmode">🌙 다크모드</button>
+  </div>
+
+  <div class="main-content">
+    <h1 class="main-name">LeeSS</h1>
+
+    <div class="intro">
+      <p>안녕하세요! 이승수입니다.</p>
+      <p>프론트엔드, 백엔드, 모두 즐기진 않고 잘 하지도 못하지만 개발하고 있습니다.</p>
+      <p>용문고등학교 문과의 희망. 인문계열의 희망.</p>
+      <p>용문고등학교의 미래를 책임지는 17세 미소녀가 꿈입니다.</p>
+      <p>AI개발 하고 있습니다.</p>
+    </div>
+
+    <div class="category-filter">
+      <button data-category="all" class="active">전체</button>
+      <button data-category="개발">개발</button>
+      <button data-category="알고리즘">알고리즘</button>
+      <button data-category="일상">일상</button>
+    </div>
+
+    <div class="posts" id="post-list">
+      <!-- 자바스크립트가 포스트를 렌더링 -->
+    </div>
+
+    <!-- 프로필 상세 섹션 -->
+    <div class="profile-details">
+      <h2>🛠 기술 스택</h2>
+      <ul class="tech-list">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Docker</li>
+      </ul>
+
+      <h2>📚 경력</h2>
+      <ul class="career-list">
+        <li><strong>ABC Corp</strong> - 프론트엔드 개발자 (2021 ~ 현재)</li>
+        <li><strong>XYZ Inc</strong> - 백엔드 개발자 (2019 ~ 2021)</li>
+      </ul>
+
+      <h2>🎓 학력</h2>
+      <p>경북대학교 졸업 (2027 ~ 2033)</p>
+    </div>
+  </div>
+</body>
+</html>
